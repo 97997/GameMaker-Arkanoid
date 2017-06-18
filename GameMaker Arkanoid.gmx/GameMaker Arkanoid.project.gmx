@@ -21,9 +21,11 @@
     <sprite>sprites\spr_Bola</sprite>
     <sprite>sprites\spr_Jugador</sprite>
     <sprite>sprites\spr_Pared</sprite>
+    <sprite>sprites\spr_bloqueDuplicar</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\fnt_Marcador</font>
   </fonts>
@@ -40,10 +42,11 @@
     <object>objects\obj_Pared</object>
     <object>objects\obj_Jugador</object>
     <object>objects\obj_Bola</object>
+    <object>objects\obj_Duplicar</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room3</room>
     <room>rooms\rm_2</room>
+    <room>rooms\room3</room>
     <room>rooms\rm_1</room>
   </rooms>
   <help>

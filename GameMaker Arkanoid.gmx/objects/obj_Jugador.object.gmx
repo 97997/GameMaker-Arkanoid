@@ -33,6 +33,30 @@ puntos = 0;       // puntos conseguidos
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Create new ball
+instance_create(clamp(x,0+55,room_width-55),450,obj_Bola);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -112,18 +136,18 @@ if (instance_number(obj_Bloque) == 0){
 
 draw_self();
 
-//draw_set_font(fnt_Marcador);
-//draw_set_valign(fa_center);
-//draw_set_color(make_colour_rgb(90,95,91));
+draw_set_font(fnt_Marcador);
+draw_set_valign(fa_center);
+draw_set_color(make_colour_rgb(90,95,91));
 
-//draw_set_halign(fa_left);
-//var p = string(puntos);
-//if (string_length(p)==1) p = "00"+p;
-//if (string_length(p)==2) p = "0"+p;
-//draw_text_ext_transformed(150,12,p,0,300,1.2,0.4,0);
+draw_set_halign(fa_left);
+var p = string(puntos);
+if (string_length(p)==1) p = "00"+p;
+if (string_length(p)==2) p = "0"+p;
+draw_text_ext_transformed(150,12,p,0,300,1.2,0.4,0);
 
-//draw_set_halign(fa_right);
-//draw_text_ext_transformed(room_width-140,12,string(vidas),0,300,1.2,0.4,0);
+draw_set_halign(fa_right);
+draw_text_ext_transformed(room_width-140,12,string(vidas),0,300,1.2,0.4,0);
 </string>
           </argument>
         </arguments>

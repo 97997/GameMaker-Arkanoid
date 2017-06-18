@@ -26,9 +26,57 @@
           <argument>
             <kind>1</kind>
             <string>/// Variables
-movespeed = 4;
+movespeed = 7;
 speed = movespeed;    // velocidad de movimiento
 direction = choose(45,135);  // dirección inicial
+acelerated = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>instance_destroy();
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Desactivar aceleramiento
+acelerated = false
 </string>
           </argument>
         </arguments>
@@ -51,20 +99,7 @@ direction = choose(45,135);  // dirección inicial
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Comprobar si reiniciar
-with(obj_Jugador) {
-    vidas--;
-    if (vidas &lt; 0) {
-        show_message("Has perdido!");
-        game_restart();
-    }
-}
-
-x = xstart;
-y = ystart;
-direction = choose(45,135);  // dirección inicial
-
-
+            <string>instance_create(clamp(obj_Jugador.x,0+55,room_width-55),450,obj_Bola);
 </string>
           </argument>
         </arguments>
@@ -113,8 +148,22 @@ speed = movespeed;
             <kind>1</kind>
             <string>/// Si la bola pasa de largo del jugador
 if (y&gt;room_height) {
-    alarm[1] = room_speed;
-    y = -10000; // la ponemos muy por encima
+    
+    
+    if(instance_number(obj_Bola) == 1)
+    {
+        with(obj_Jugador) {
+        vidas--;
+            if (vidas &lt; 0) {
+                show_message("Has perdido!");
+                game_restart();
+            }
+        }
+        obj_Jugador.alarm[0] = room_speed;
+
+    }
+    instance_destroy();
+
 }
 </string>
           </argument>
@@ -141,14 +190,25 @@ if (y&gt;room_height) {
             <string>/// Rebote contra jugador
 direction = 90 + (obj_Jugador.x - x);
 direction = clamp(direction,20,160);
+speed = movespeed;
+if(speed &gt; 14)
+{
+speed -= random_range(1,4)
+}
+if(acelerated)
+{
+speed += random_range(3,4);
+}
 
 // Aceleración durante unos instantas dependiendo del ángulo
 if (direction &gt; 150 or direction &lt; 30) {
-    alarm[0] = room_speed*3;
-    speed = movespeed * 2;
+    acelerated = true
+    //Alarm 2 va a contener el codigo para desactivar el desaceleramiento
+    alarm[2] = room_speed * 5;
 } else if (direction &gt; 120 or direction &lt; 60) {
-    alarm[0] = room_speed*3;
-    speed = movespeed * 1.5;
+    acelerated = true
+    //Alarm 2 va a contener el codigo para desactivar el desaceleramiento
+    alarm[2] = room_speed * 3
 }
 
 y = obj_Jugador.y - 15;
@@ -294,6 +354,31 @@ with (other) instance_destroy();
             <kind>1</kind>
             <string>/// Audio
 if (!audio_is_playing(snd_Bloque)) audio_play_sound(snd_Bloque,80,false);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Aceleración
+if(speed&lt;12)
+{
+speed += 1;
+}
 </string>
           </argument>
         </arguments>

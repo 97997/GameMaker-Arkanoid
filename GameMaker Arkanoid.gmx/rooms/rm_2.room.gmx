@@ -57,7 +57,6 @@
     <instance objName="obj_Bloque_Azul" x="250" y="75" name="inst_AB8A36DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Azul" x="300" y="90" name="inst_4F28397A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Azul" x="350" y="105" name="inst_48C04301" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Azul" x="400" y="120" name="inst_477EB5FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Azul" x="450" y="135" name="inst_2AC1B7F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Azul" x="500" y="150" name="inst_ACC565FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Azul" x="550" y="165" name="inst_97FA56FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -146,7 +145,6 @@
     <instance objName="obj_Pared" x="500" y="0" name="inst_BF3AF34E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Jugador" x="400" y="465" name="inst_D467FE28" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bola" x="400" y="435" name="inst_D31A9F11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bola" x="400" y="390" name="inst_34DE522D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Naranja" x="50" y="60" name="inst_4F7ADC98" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Naranja" x="100" y="75" name="inst_47041EC1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Naranja" x="150" y="90" name="inst_F308DB0E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -169,7 +167,6 @@
     <instance objName="obj_Bloque_Rojo" x="350" y="195" name="inst_B54B574E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="300" y="210" name="inst_0C705664" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="250" y="225" name="inst_57964AE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Rojo" x="200" y="240" name="inst_5C3713BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="150" y="255" name="inst_A6E45D5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="100" y="270" name="inst_15144C32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Verde_Oliva" x="750" y="150" name="inst_5314C628" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -182,6 +179,8 @@
     <instance objName="obj_Bloque_Verde_Oliva" x="400" y="45" name="inst_24C9D90A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Verde_Oliva" x="350" y="30" name="inst_0FE46D60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Verde_Oliva" x="300" y="15" name="inst_89B1E977" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Duplicar" x="200" y="240" name="inst_C5B37099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Duplicar" x="400" y="120" name="inst_7B474D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
