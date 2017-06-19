@@ -26,10 +26,18 @@
           <argument>
             <kind>1</kind>
             <string>/// Variables
+//movespeed = 7;
+//speed = movespeed;    // velocidad de movimiento
+movespeed = 0
+speed = movespeed;
+if(instance_number(obj_Bola)&gt; 1)
+{
 movespeed = 7;
 speed = movespeed;    // velocidad de movimiento
+}
 direction = choose(45,135);  // dirección inicial
 acelerated = false;
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -146,7 +154,12 @@ speed = movespeed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Si la bola pasa de largo del jugador
+            <string>if(speed==0)
+{
+x = obj_Jugador.x;
+}
+
+/// Si la bola pasa de largo del jugador
 if (y&gt;room_height) {
     
     
@@ -291,25 +304,27 @@ if (!audio_is_playing(snd_Pared)) audio_play_sound(snd_Pared,80,false);
     <event eventtype="4" ename="obj_Bloque">
       <action>
         <libid>1</libid>
-        <id>115</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
         <useapplyto>-1</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_bounce</functionname>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>4</kind>
-            <string>0</string>
-          </argument>
-          <argument>
-            <kind>4</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>///Bounce
+if(image_speed == 0)
+{
+move_bounce_all(false);
+}
+
+</string>
           </argument>
         </arguments>
       </action>
@@ -379,6 +394,30 @@ if(speed&lt;12)
 {
 speed += 1;
 }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="50">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>movespeed = 7;
+speed = movespeed;    // velocidad de movimiento
 </string>
           </argument>
         </arguments>
