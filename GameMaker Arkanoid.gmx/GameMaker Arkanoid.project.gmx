@@ -46,7 +46,7 @@
     <object>objects\obj_Duplicar</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room3</room>
+    <room>rooms\rm_3</room>
     <room>rooms\rm_2</room>
     <room>rooms\rm_1</room>
   </rooms>
