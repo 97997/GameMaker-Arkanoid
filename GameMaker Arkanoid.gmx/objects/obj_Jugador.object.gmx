@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Variables
+boost = false;
 vidas = 3;        // cantidad de vidas restantes
 puntos = 0;       // puntos conseguidos
 </string>
@@ -75,7 +76,10 @@ instance_create(clamp(x,0+55,room_width-55),450,obj_Bola);
           <argument>
             <kind>1</kind>
             <string>/// Movimiento horizontal
-x = mouse_x;
+//x = mouse_x;
+if (keyboard_check(vk_shift))
+{boost = true;}
+else{boost = false;}
 </string>
           </argument>
         </arguments>
@@ -110,6 +114,66 @@ if (instance_number(obj_Bloque) == 0){
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="39">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if boost
+{
+x += 13;
+}
+else
+{
+    x+=7;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="37">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if boost
+{
+x -= 13;
+}
+else
+{
+    x-=7;
+}
 </string>
           </argument>
         </arguments>

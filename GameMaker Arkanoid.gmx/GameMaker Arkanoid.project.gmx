@@ -23,6 +23,9 @@
     <sprite>sprites\spr_Pared</sprite>
     <sprite>sprites\spr_bloqueDuplicar</sprite>
     <sprite>sprites\spr_bola_fuego</sprite>
+    <sprites name="Controls">
+      <sprite>sprites\spr_left</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -44,6 +47,7 @@
     <object>objects\obj_Jugador</object>
     <object>objects\obj_Bola</object>
     <object>objects\obj_Duplicar</object>
+    <object>objects\obj_control</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_3</room>
