@@ -2,6 +2,7 @@
 <assets>
   <Configs name="configs">
     <Config>Configs\Default</Config>
+    <Config>Configs\Touchcontrols</Config>
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
@@ -25,6 +26,8 @@
     <sprite>sprites\spr_bola_fuego</sprite>
     <sprites name="Controls">
       <sprite>sprites\spr_left</sprite>
+      <sprite>sprites\spr_right</sprite>
+      <sprite>sprites\spr_launch</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>

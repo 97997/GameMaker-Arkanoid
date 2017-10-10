@@ -80,6 +80,28 @@ instance_create(clamp(x,0+55,room_width-55),450,obj_Bola);
 if (keyboard_check(vk_shift))
 {boost = true;}
 else{boost = false;}
+//Touch controls
+/*
+if device_mouse_check_button(0, mb_left)
+{
+    if device_mouse_x(0) &gt; x-32 &amp;&amp; device_mouse_x(0) &lt; x+32
+       {
+       pressed = true;
+       }
+    else
+       {
+       pressed = false;
+       }
+}
+if(pressed)
+{
+boost = true;
+}
+else
+{
+boost = false;
+}
+*/
 </string>
           </argument>
         </arguments>

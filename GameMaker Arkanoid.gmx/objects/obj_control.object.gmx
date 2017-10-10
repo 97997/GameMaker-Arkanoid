@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>k_Left = virtual_key_add(50,210,80,80,vk_left);
+            <string>k_Left = virtual_key_add(0,0,room_width/2,room_height/2,vk_left);
 //virtual_key_show(k_Left);
+k_Right = virtual_key_add(room_width/2, 0, room_width/2,room_height,vk_right);
+
 </string>
           </argument>
         </arguments>
@@ -50,6 +52,7 @@
           <argument>
             <kind>1</kind>
             <string>draw_sprite(spr_left,0,50,210);
+draw_sprite(spr_right,0,700,210);
 </string>
           </argument>
         </arguments>
