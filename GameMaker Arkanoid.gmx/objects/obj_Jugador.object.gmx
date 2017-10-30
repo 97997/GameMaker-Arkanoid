@@ -75,33 +75,20 @@ instance_create(clamp(x,0+55,room_width-55),450,obj_Bola);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Movimiento horizontal
-//x = mouse_x;
-if (keyboard_check(vk_shift))
-{boost = true;}
-else{boost = false;}
-//Touch controls
-/*
-if device_mouse_check_button(0, mb_left)
-{
-    if device_mouse_x(0) &gt; x-32 &amp;&amp; device_mouse_x(0) &lt; x+32
-       {
-       pressed = true;
-       }
-    else
-       {
-       pressed = false;
-       }
+            <string>/// Fin juego?
+if (instance_number(obj_Bloque) == 0){
+    
+    if room_next(room) != -1
+   {
+   room_goto(room_next(room));
+   }
+   else{
+   show_message("Has ganado!");
+   game_restart();
+   }
 }
-if(pressed)
-{
-boost = true;
-}
-else
-{
-boost = false;
-}
-*/
+
+
 </string>
           </argument>
         </arguments>
@@ -122,20 +109,35 @@ boost = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Fin juego?
-if (instance_number(obj_Bloque) == 0){
-    
-    if room_next(room) != -1
-   {
-   room_goto(room_next(room));
-   }
-   else{
-   show_message("Has ganado!");
-   game_restart();
-   }
-}
+            <string>/// Movimiento horizontal
+//x = mouse_x;
 
-
+if (keyboard_check(vk_shift))
+{boost = true;}
+else{boost = false;}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Para que el jugador no salga de pantalla
+if(x&lt;0)x=0;
+if(x&gt;room_width)x=room_width;
 </string>
           </argument>
         </arguments>
@@ -160,11 +162,11 @@ if (instance_number(obj_Bloque) == 0){
             <kind>1</kind>
             <string>if boost
 {
-x += 13;
+x += 18;
 }
 else
 {
-    x+=7;
+    x+=13;
 }
 </string>
           </argument>
@@ -190,11 +192,11 @@ else
             <kind>1</kind>
             <string>if boost
 {
-x -= 13;
+x -= 18;
 }
 else
 {
-    x-=7;
+    x-=13;
 }
 </string>
           </argument>

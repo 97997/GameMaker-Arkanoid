@@ -46,8 +46,8 @@
     </objects>
     <object>objects\obj_Bloque</object>
     <object>objects\obj_Bola_Fuego</object>
-    <object>objects\obj_Pared</object>
     <object>objects\obj_Jugador</object>
+    <object>objects\obj_Pared</object>
     <object>objects\obj_Bola</object>
     <object>objects\obj_Duplicar</object>
     <object>objects\obj_control</object>

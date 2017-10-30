@@ -182,6 +182,7 @@
     <instance objName="obj_Duplicar" x="200" y="240" name="inst_C5B37099" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Duplicar" x="400" y="120" name="inst_7B474D2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bola_Fuego" x="700" y="210" name="inst_45F2A1A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_control" x="400" y="240" name="inst_91BF5553" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

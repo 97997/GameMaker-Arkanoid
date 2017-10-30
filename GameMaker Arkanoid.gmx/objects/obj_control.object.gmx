@@ -25,9 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>k_Left = virtual_key_add(0,0,room_width/2,room_height/2,vk_left);
-//virtual_key_show(k_Left);
-k_Right = virtual_key_add(room_width/2, 0, room_width/2,room_height,vk_right);
+            <string>k_Left = virtual_key_add(0,0,room_width/2,room_height,vk_left);
+k_Right = virtual_key_add(room_width/2, 0,room_width/2,room_height,vk_right);
 
 </string>
           </argument>

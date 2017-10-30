@@ -6,7 +6,7 @@
   <vsnap>15</vsnap>
   <hsnap>50</hsnap>
   <isometric>0</isometric>
-  <speed>60</speed>
+  <speed>30</speed>
   <persistent>0</persistent>
   <colour>526856</colour>
   <showcolour>-1</showcolour>
@@ -56,15 +56,10 @@
     <instance objName="obj_Bloque_Verde" x="700" y="210" name="inst_3D8206F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Verde_Fluorescente" x="700" y="240" name="inst_1528FF5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Azul" x="700" y="270" name="inst_AE2B1FFF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Rojo" x="100" y="150" name="inst_7AF1CBDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="150" y="150" name="inst_33DD6A8F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Rojo" x="200" y="150" name="inst_4772EEEB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="250" y="150" name="inst_86D6ECBE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Rojo" x="300" y="150" name="inst_8CEBC435" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="500" y="150" name="inst_547E48F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Rojo" x="550" y="150" name="inst_A14C1429" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Rojo" x="600" y="150" name="inst_FE36C13D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Bloque_Rojo" x="650" y="150" name="inst_8017429D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Naranja" x="100" y="165" name="inst_4536FA27" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Naranja" x="150" y="150" name="inst_7458607D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Bloque_Naranja" x="200" y="165" name="inst_793C3ACE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

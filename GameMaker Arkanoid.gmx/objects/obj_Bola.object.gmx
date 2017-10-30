@@ -28,7 +28,7 @@
             <string>/// Variables
 //movespeed = 7;
 //speed = movespeed;    // velocidad de movimiento
-movespeed = 0
+movespeed = 0;
 speed = movespeed;
 if(instance_number(obj_Bola)&gt; 1)
 {
@@ -168,7 +168,7 @@ if (y&gt;room_height) {
         with(obj_Jugador) {
         vidas--;
             if (vidas &lt; 0) {
-                show_message("Has perdido!");
+                show_message("Intentalo de nuevo UwU");
                 game_restart();
             }
         }
